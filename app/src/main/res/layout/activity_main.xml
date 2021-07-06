@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@color/purple_200"
+
+    <TextView
+        android:id="@+id/TextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Display"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/middleBar"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_above="@id/TopBar"
+        android:layout_below="@+id/TopBar"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-259dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@drawable/bayar" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@drawable/History" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@drawable/Akun" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_above="@+id/middleBar"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="-205dp"
+        android:orientation="horizontal"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:id="@+id/TextRekomendasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Barang Rekomendasi untuk anda"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/middleBar"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="-611dp"
+        android:orientation="horizontal">>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/headset" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="Headset"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp.20.000"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/Headset2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="Etika"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp.20.000"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/Headset4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="Etika"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp.20.000"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/Headset3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="Etika"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp.20.000"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@id/TextRekomendasi"
+        android:layout_height="240dp"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+</RelativeLayout>
